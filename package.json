@@ -1,0 +1,30 @@
+{
+  "name": "live-voting_back",
+  "module": "./src/index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "start": "bun run src/index.ts",
+    "dev": "bun run --watch src/index.ts",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "build": "bun build src/index.ts --outdir dist"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.31.0",
+    "@types/bun": "latest",
+    "@types/express": "^5.0.3",
+    "eslint": "^9.31.0",
+    "globals": "^16.3.0",
+    "neostandard": "^0.12.2",
+    "typescript-eslint": "^8.36.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "socket.io": "^4.8.1"
+  }
+}
