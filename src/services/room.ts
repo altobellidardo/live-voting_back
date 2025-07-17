@@ -1,17 +1,5 @@
 import crypto from 'node:crypto'
-import type { User } from './user'
-
-export interface Room {
-  id: string
-  title: string
-  votes: Vote[]
-  users: User[]
-}
-
-export interface Vote {
-  userId: string
-  option: string
-}
+import type { Room, User } from '../models/user'
 
 export class RoomService {
   static gen (roomName: string) {

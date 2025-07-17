@@ -1,7 +1,8 @@
 import { Router } from 'express'
 import { generateToken } from '../utils/jwt'
-import { RoomService, type Room } from '../services/room'
+import { RoomService } from '../services/room'
 import { UserService } from '../services/user'
+import type { Room } from '../models/user'
 
 const router = Router()
 

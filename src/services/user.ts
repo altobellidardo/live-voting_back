@@ -1,12 +1,5 @@
+import type { Room, User } from '../models/user'
 import { decodeToken } from '../utils/jwt'
-import type { Room } from './room'
-
-export interface User {
-  id: `${string}-${string}-${string}-${string}-${string}`
-  name: string
-  admin: boolean,
-  roomId: Room['id']
-}
 
 export class UserService {
   static gen (name: string, roomId: Room['id'], admin: boolean): User {
